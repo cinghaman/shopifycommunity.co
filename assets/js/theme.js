@@ -2657,18 +2657,7 @@ jQuery(document).ready(function ($) {
     });
   };
 })(jQuery);
-jQuery(document).ready(function ($) {
-  if (liquidIsMobile() || window.vc_iframe || 'elementorFrontend' in window && elementorFrontend.isEditMode()) return;
-  const addCustomCursorMarkup = () => {
-    const $elements = $('[data-lqd-custom-cursor]');
-    $elements.each((i, el) => {
-      const $ccSpan = $(`<span class="lqd-extra-cursor pos-fix pointer-events-none"></span>`);
-      $(el).prepend($ccSpan);
-    });
-  };
-  addCustomCursorMarkup();
-  $('[data-lqd-cc]').liquidCustomCursor();
-});
+
 (function ($) {
   'use strict';
 
